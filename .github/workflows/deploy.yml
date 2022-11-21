@@ -27,6 +27,7 @@ jobs:
         run: npm run build
         env:
           APOD_KEY: ${{secrets.APOD_KEY}}
+          VITE_APOD_KEY: ${{secrets.VITE_APOD_KEY}}
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
